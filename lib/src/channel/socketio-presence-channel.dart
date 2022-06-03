@@ -47,13 +47,4 @@ class SocketIoPresenceChannel extends SocketIoPrivateChannel
     return this;
   }
 
-  SocketIoPresenceChannel whisper_v2(String eventName, dynamic data) {
-    this.emit('client event', {
-      'channel': this.name,
-      'event': 'client-$eventName',
-      'data': data,
-    });
-
-    return this;
-  }
 }
