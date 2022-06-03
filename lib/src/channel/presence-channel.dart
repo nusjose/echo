@@ -12,4 +12,7 @@ abstract class PresenceChannel extends Channel {
 
   /// Listen for someone leaving the channel.
   PresenceChannel leaving(Function callback);
+
+  PresenceChannel whisper(String eventName, dynamic data);
+
 }
